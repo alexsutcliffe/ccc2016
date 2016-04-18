@@ -1,0 +1,75 @@
+// Footer styles
+footer {
+	padding: 40px 0;
+	position: relative;
+	width: 100%;
+
+	.footer-border{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		@include clearfix;
+
+		span{
+		    height: 2px;
+		    display: block;
+		    float: left;
+
+		    &.part-one{
+		    	width: 15%;
+		    	background-color: $secondary;
+		    }
+		    &.part-two{
+		    	width: 15%;
+		    	background-color: #07ACEB;  
+		    }
+		    &.part-three{
+		    	width: 35%;
+		    	background-color: #59D4FF;
+		    }
+		    &.part-four{
+		    	width: 35%;
+		    	background-color: $off-white;
+		    }
+		}
+	}
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        text-align: center;
+
+        @include desktop{
+        	text-align: left;
+        }
+
+        li {
+        	display: inline-block;
+        	margin-right: 20px;
+
+        	&:last-child{
+        		margin-right: 0;
+        	}
+
+        	a{
+        		
+
+        		&:link, &:hover, &:visited, &:active{
+        			color: $off-white;
+        			font-family: $heading-font-family;
+        			font-size: 15px;
+        		}
+        	}
+        }
+
+    }
+
+    .social ul{
+    	@include desktop{ 
+        	text-align: right; 
+        }
+    }
+}

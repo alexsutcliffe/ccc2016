@@ -1,0 +1,42 @@
+body{
+	background-color: $solid-bg;
+}
+
+.site-wrapper {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+
+header{
+	background-color: $secondary-dark;
+	background-color: $secondary-opaque;
+	border-bottom: $secondary;
+	border-bottom: 2px solid rgba(15, 96, 141, 0.5);
+	padding: 20px 0 15px 0;
+	width: 100%;
+	@include clearfix;
+}
+
+section{
+	position: relative;
+	text-align: center;
+	padding: 80px 0;
+
+	.masthead{
+		p{
+    		max-width: 800px;
+    		display: inline-block;
+		}
+
+		p:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+
+// Import components
+@import "components/navigation";
+@import "components/footer";
+@import "components/testimonials";
+@import "components/register-box";

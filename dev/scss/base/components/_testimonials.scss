@@ -1,0 +1,63 @@
+// Testimonials Styles
+
+.testimonials{
+
+	.testimonials-list{
+		@include tablet{
+			max-width: 600px;
+		}
+		@include desktop{
+			max-width: 100%;
+		}
+		margin: 0 auto;
+	}
+
+	.testimonial{
+		margin-bottom: 50px;
+		@include tablet{
+			margin-bottom: 50px;
+		}
+		@include desktop{
+			margin-bottom: 0;
+		}
+	}
+
+	.masthead{
+		margin-bottom: 70px;
+	}
+
+	.testimonial-headshot{
+		margin-bottom: 10px;
+		line-height: 1;
+
+		img{
+			@include border-radius(150%);
+		}
+	}
+
+	.testimonial-name{
+ 
+		h4{
+			margin-top: 0;
+			margin-bottom: 5px;
+			color: $primary;
+		}
+	}
+
+	.testimonial-title{
+			line-height: 1;
+		small{
+			color: $primary;
+			font-size: 13px;
+			margin-bottom: 5px;
+
+		}
+	}
+
+	.pointer-arrow{
+		position: absolute;
+		top: -14px;
+		left: 50%;
+		margin-left: -15px;
+	}
+}

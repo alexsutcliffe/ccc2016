@@ -1,0 +1,48 @@
+// Register Box styles
+
+.register-box{
+	position: relative;
+	padding: 55px 40px 40px 40px;
+	width: 100%;
+	max-width: 370px;
+	margin: 0 auto;
+	border: 1px solid $secondary;
+
+	h3{
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		color: $primary;
+	}
+
+	p.small{
+		font-size: 13px;
+		line-height: 1.8;
+		margin-bottom: 30px;
+	}
+
+	p{
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+
+	.price{
+		line-height: 1;
+		color: $primary;
+		font-family: $heading-font-family;
+		font-weight: 100;
+		font-size: 55px;
+		margin-bottom: 30px;
+ 
+		sup{
+			font-size: 25px;
+    		top: -20px;
+		}
+	}
+
+	.pointer-arrow{
+		position: absolute;
+		top: -15px;
+		left: 50%;
+		margin-left: -15px;
+	}
+}
