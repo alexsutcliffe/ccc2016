@@ -1,20 +1,41 @@
 @mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-  border-radius: $radius;
-  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
-}
-.rounded{
-	@include border-radius(150%);
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
 }
 
-.text-left{
-	text-align: left;
+.rounded {
+    @include border-radius(150%);
 }
 
-.text-center{
-	text-align: center;
+.text-left {
+    text-align: left;
 }
 
-.text-right{
-	text-align: right;
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.hidden {
+    background-color: transparent;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0s cubic-bezier(0.25, 0.1, 0.38, 1.01);
+}
+
+.visible {
+    visibility: visible;
+    background-color: rgba(59, 65, 69, 0.5);
+    opacity: 1;
+    transition: 0.8s cubic-bezier(0.25, 0.1, 0.38, 1.01);
+}
+
+.blur {
+    -webkit-filter: blur(13px);
+    box-shadow: 2px 0px 64px 17px rgba(0, 0, 0, 0.75);
 }

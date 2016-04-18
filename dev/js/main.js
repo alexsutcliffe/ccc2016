@@ -1,17 +1,9 @@
 $(document).ready(function() {
-    function toggleNav() {
-        if ($('.site-wrapper').hasClass('show-nav')) {
-            // Do things on Nav Close
-            $('.site-wrapper').removeClass('show-nav');
-        } else {
-            // Do things on Nav Open
-            $('.site-wrapper').addClass('show-nav');
-        }
-    }
-
-    $('.toggle-nav').click(function(e) {
-        e.preventDefault();
-        toggleNav();
+    $('#mobile-nav-toggle').click(function() {
+        $('.site-wrapper').toggleClass('blur');
+        $('#clio-mobile-menu').toggleClass('visible hidden');
+        $('.close').toggleClass('hide show');
+        $('.bars').toggleClass('show hide');
     });
 
 	// Footer year
