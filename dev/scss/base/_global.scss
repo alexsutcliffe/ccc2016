@@ -33,6 +33,24 @@ section{
 			margin-bottom: 0;
 		}
 	}
+
+	.copy-block{
+		width: 100%;
+		max-width: 750px;
+		margin: 0 auto;
+
+		&.text-center{
+			text-align: center; 
+		}
+
+		&.text-left{
+			text-align: left;
+		}
+
+		img{
+			margin-bottom: 30px;
+		}
+	}
 }
 
 // Import components
