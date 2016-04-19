@@ -68,6 +68,13 @@ section{
 			margin-bottom: 30px;
 		}
 	}
+
+	.pointer-arrow {
+	    position: absolute;
+	    top: -14px;
+	    left: 50%;
+	    margin-left: -15px;
+	}
 }
 
 // Import components
@@ -81,3 +88,4 @@ section{
 @import "pages/why";
 @import "pages/cle";
 @import "pages/sponsors";
+@import "pages/register";
