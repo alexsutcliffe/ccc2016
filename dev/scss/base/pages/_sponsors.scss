@@ -1,6 +1,11 @@
 // Styles for sponsors page
 div.sponsors-template{
+	.masthead{
 
+		h1{
+			margin-bottom: 0;
+		}
+	}
 	.sponsors-hr{
 		@include clearfix;
 
@@ -20,6 +25,7 @@ div.sponsors-template{
 		    width: 20%;
 		    line-height: 1px;
 		    text-align: center;
+		    font-size: 16px;
 			
 			@include tablet{
 		    	width: 10%;
@@ -31,13 +37,13 @@ div.sponsors-template{
 
 		.column{
 			overflow: hidden;
-		    padding-bottom: 5px;
-		    padding-top: 5px;
-		    padding-left: 10px;
-		    padding-right: 10px;
+			padding: 20px; 
 		    text-align: left;
 			img{
 				width: 100%;
+			}
+			p{
+				margin-bottom: 10px;
 			}
 		}
 	}
