@@ -1,0 +1,73 @@
+// Styles for register page
+
+.register-template{
+
+	.register-boxes{
+		max-width: 750px;
+		margin-top: 100px;
+		margin-bottom: 100px;
+		.columns{
+			padding-left: 0;
+			padding-right: 0;
+
+			&.float-right{
+				float: right !important;
+			}
+		}
+	}
+
+	.register-box{
+		max-width: 340px;
+
+		small{
+			font-family: $heading-font-family;
+			font-size: 14px;
+			color: $primary;
+			margin-bottom: 20px;
+			display: inline-block;
+			font-weight: normal;
+		}
+
+		h3{
+			margin-bottom: 0;
+			color: $off-white;
+		}
+
+		.price{
+			color: $off-white;
+		}
+
+		p.small{
+			margin-bottom: 60px;
+		}
+
+		.btn{
+			margin-bottom: 0;
+		}
+
+		@include mobile{
+			float: none !important;
+			margin-bottom: 0;
+			max-width: 100%;
+			border-right: none;
+			border-left: none;
+		}
+	}
+
+	section.venue{
+		background-color: rgba(0, 0, 0, 0.05);
+
+		.btn{
+			margin-bottom: 0;
+		}
+	}
+	section.venue2{
+
+		.btn{
+			margin-bottom: 0;
+		}
+	}
+	section.testimonials{
+		background-color: rgba(0, 0, 0, 0.05);
+	}
+}
