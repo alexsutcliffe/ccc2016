@@ -17,7 +17,7 @@ $(document).ready(function() {
     $(window).on("scroll", function() {
         if (isMobile === true) {
             if($(window).scrollTop() > 80) {
-                $("header").css({'background-color' : '#004670'});
+                $("header").css({'background-color' : 'rgba(16,50,72,1)'});
             } else {
                 $("header").css({'background-color' : 'rgba(0,70,112,0.2)'});
             }

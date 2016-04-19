@@ -1,0 +1,44 @@
+// Styles for sponsors page
+div.sponsors-template{
+
+	.sponsors-hr{
+		@include clearfix;
+
+		.sponsors-hr--line {
+		    height: 1px;
+		    float: left;
+		    background: $primary;
+		    width: 40%;
+
+		    @include tablet{
+		    	width: 45%;
+		    }
+		}
+		.sponsors-hr--text{
+			color: $primary;
+		    float: left;
+		    width: 20%;
+		    line-height: 1px;
+		    text-align: center;
+			
+			@include tablet{
+		    	width: 10%;
+		    }
+		}
+	}
+
+	.sponsors-list{
+
+		.column{
+			overflow: hidden;
+		    padding-bottom: 5px;
+		    padding-top: 5px;
+		    padding-left: 10px;
+		    padding-right: 10px;
+		    text-align: left;
+			img{
+				width: 100%;
+			}
+		}
+	}
+}
