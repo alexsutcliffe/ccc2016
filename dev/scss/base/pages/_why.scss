@@ -1,0 +1,57 @@
+#whyattend {
+	.reasons {
+		margin-top: 4em;
+		max-width: 70rem;
+		.box {
+			min-height: 500px;
+			border: 1px solid $secondary-dark;
+			padding: 2em;
+			background-color: rgba(255,255,255,0.02);
+			&:hover {
+				background-color: rgba(255,255,255,0.04);
+			}
+			p, h2 { 
+			text-align: left;
+			}
+			h2 {
+				color: $primary;
+				margin-top:1.5em;
+			}
+			.number {
+			  border: 1px solid $off-white;
+		    display: table-cell;
+		    border-radius: 100%;
+		    padding: 4px 15px;
+		    margin-bottom: 2em;
+		    color: $off-white;
+			}
+			.double {
+				padding: 4px 10px !important;
+			}
+		}
+		.image1 {
+			background: url('../img/whyattend1.png') no-repeat center center;
+			background-size: cover;
+		}
+		.image2 {
+			background: url('../img/whyattend2.png') no-repeat center center;
+			background-size: cover;
+		}
+		.image3 {
+			background: url('../img/whyattend4.png') no-repeat center center;
+			background-size: cover;
+			display: none;
+			@include tablet {
+				display: block;
+			}
+		}
+		.image4 {
+			background: url('../img/whyattend3.png') no-repeat center center;
+			background-size: cover;
+			display: none;
+			@include tablet {
+				display: block;
+			}
+		}
+	}
+}
