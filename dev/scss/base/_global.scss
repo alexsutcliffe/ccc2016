@@ -18,6 +18,15 @@ header{
 	padding: 20px 0 15px 0;
 	width: 100%;
 	@include clearfix;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	@include transition(background-color 0.3s ease-in-out);
+	@include desktop{
+		position: absolute;
+	}
+
 	
 }
 
@@ -61,3 +70,6 @@ section{
 @import "components/footer";
 @import "components/testimonials";
 @import "components/register-box";
+
+// Import Pages
+@import "pages/home";
