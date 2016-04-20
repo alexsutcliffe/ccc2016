@@ -1,54 +1,58 @@
 div.networking-template {
-	.no-padding {
-		padding: 0;
-		.full-bleed {
-			max-width: 100%;
-			height: auto;
-			min-height: 300px;
-			max-height: 400px;
-			overflow: hidden;
-			.left {
-				background: url('../img/networking-left.jpg') no-repeat center center;
-				background-size: cover;
-			}
-			.middle {
-				background: url('../img/networking-video-BW-2.jpg') no-repeat center center;
-				background-size: cover;
-				cursor: pointer;
-				transition: 0.5s ease 0.1s;
-				&:hover {
-					background: url('../img/networking-video-colour.jpg') no-repeat center center;
-					background-size: cover;
-				}
-			}
-			.right {
-				background: url('../img/networking-right.jpg') no-repeat center center;
-				background-size: cover;
-			}
-			.left, .right {
-					display: none;
-					@include tablet {
-						display: block;
-					}
-				}
-				.middle {
-					width: 100%;
-					@include tablet {
-						width: 33.33333%;
-						padding: 0;
-					}
-				}
-			.column {
-				padding: 0;
-				max-width: 100%;
-	    	height: auto;
-	    	min-height: 300px;
-    		max-height: 400px;
-				img {
-					width: 100%;
-					height: auto;
-				}
-			}
-		}
-	}
+    .no-padding {
+        padding: 0;
+        .full-bleed {
+            max-width: 100%;
+            height: auto;
+            min-height: 300px;
+            max-height: 400px;
+            overflow: hidden;
+            .left {
+                background: url('../img/networking-left.jpg') no-repeat center center;
+                background-size: cover;
+            }
+            .middle {
+                background: url('../img/networking-video-BW-2.jpg') no-repeat center center;
+                background-size: cover;
+                cursor: pointer;
+                transition: 0.5s ease 0.1s;
+                &:hover {
+                    background: url('../img/networking-video-colour.jpg') no-repeat center center;
+                    background-size: cover;
+                }
+            }
+            .right {
+                background: url('../img/networking-right.jpg') no-repeat center center;
+                background-size: cover;
+            }
+            .left,
+            .right {
+                display: none;
+                @include tablet {
+                    display: block;
+                }
+            }
+            .middle {
+                width: 100%;
+                @include tablet {
+                    width: 33.33333%;
+                    padding: 0;
+                }
+            }
+            .column {
+                padding: 0;
+                max-width: 100%;
+                height: auto;
+                min-height: 300px;
+                max-height: 400px;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    section.testimonials {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
 }

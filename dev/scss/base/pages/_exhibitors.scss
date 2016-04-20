@@ -1,36 +1,39 @@
 div.exhibitors-template {
-	section.no-padding + section {
-		padding-top: 0 !important; 
-	}
-	.no-bottom-padding {
-		padding: 100px 0 0 0 !important;
-	}
-	.no-padding {
-		padding: 0;
-		.full-bleed {
-			max-width: 100%;
-			height: auto;
-			min-height: 300px;
-			max-height: 400px;
-			overflow: hidden;
-			.exhibitors {
-				background: url('../img/exhibitors.jpg') no-repeat center center;
-				background-size: cover;
-				@include desktop {
-					background-size: contain;
-				}
-			}
-			.column {
-				padding: 0;
-				max-width: 100%;
-	    	height: auto;
-	    	min-height: 300px;
-    		max-height: 400px;
-				img {
-					width: 100%;
-					height: auto;
-				}
-			}
-		}
-	}
+    section.no-padding + section {
+        padding-top: 0 !important;
+    }
+    .no-bottom-padding {
+        padding: 100px 0 0 0 !important;
+    }
+    .no-padding {
+        padding: 0;
+        .full-bleed {
+            max-width: 100%;
+            height: auto;
+            min-height: 300px;
+            max-height: 400px;
+            overflow: hidden;
+            .exhibitors {
+                background: url('../img/exhibitors.jpg') no-repeat center center;
+                background-size: cover;
+                @include desktop {
+                    background-size: contain;
+                }
+            }
+            .column {
+                padding: 0;
+                max-width: 100%;
+                height: auto;
+                min-height: 300px;
+                max-height: 400px;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    section.testimonials {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
 }
