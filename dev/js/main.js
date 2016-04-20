@@ -7,27 +7,32 @@ $(document).ready(function() {
     });
 
     // This will be used globally so no harm declaring it as global
-    var isMobile;       
+    var isMobile;
     if ($(window).width() > 1010) {
         isMobile = false;
-    }else{
+    } else {
         isMobile = true;
     }
-    
+
     $(window).on("scroll", function() {
         if (isMobile === true) {
-            if($(window).scrollTop() > 80) {
-                $("header").css({'background-color' : 'rgba(16,50,72,1)'});
+            if ($(window).scrollTop() > 80) {
+                $("header").css({ 'background-color': 'rgba(16,50,72,1)' });
             } else {
-                $("header").css({'background-color' : 'rgba(0,70,112,0.2)'});
+                $("header").css({ 'background-color': 'rgba(0,70,112,0.2)' });
             }
         }
     });
-    
 
-	// Footer year
-	var d = new Date();
-	var y = d.getFullYear();
-	$('span.copy-year').html(y);
+    if ((".speakers-template .speakers").length) {
+        $('.speakers-template .speakers').masonry({
+            itemSelector: '.speakers-template .speakers .column'
+        });
+    }
+
+    // Footer year
+    var d = new Date();
+    var y = d.getFullYear();
+    $('span.copy-year').html(y);
 
 });
