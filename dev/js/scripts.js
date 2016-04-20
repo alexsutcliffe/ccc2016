@@ -23,14 +23,13 @@ $(document).ready(function() {
             e.preventDefault();
             $('.site-wrapper').toggleClass('blur');
             $('#overlay').toggleClass('visible hidden');
-            // $('#mobile-nav-toggle').css('display','none');
         });
         $('#close-overlay').click(function(e) {
             e.preventDefault();
             $('.site-wrapper').toggleClass('blur');
             $('#overlay').toggleClass('hidden visible');
         });
-        
+
     }
 
     // This will be used globally so no harm declaring it as global
@@ -62,8 +61,6 @@ $(document).ready(function() {
     var y = d.getFullYear();
     $('span.copy-year').html(y);
 
-     $('.bxslider').bxSlider();
+    $('.bxslider').bxSlider();
 
 });
-
-

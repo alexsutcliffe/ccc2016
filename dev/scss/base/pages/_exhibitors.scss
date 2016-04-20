@@ -1,6 +1,9 @@
 div.exhibitors-template {
     section.no-padding + section {
-        padding-top: 0 !important;
+    	padding-top: 50px;
+        // @include desktop {
+        //     padding-top: 0 !important;
+        // }
     }
     .no-bottom-padding {
         padding: 100px 0 0 0 !important;
@@ -14,7 +17,7 @@ div.exhibitors-template {
             max-height: 400px;
             overflow: hidden;
             .exhibitors {
-                background: url('../img/exhibitors.jpg') no-repeat center center;
+                background: url('../img/exhibitors.jpg') no-repeat right center;
                 background-size: cover;
                 @include desktop {
                     background-size: contain;
