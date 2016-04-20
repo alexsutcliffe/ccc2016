@@ -40,6 +40,10 @@ section{
 	text-align: center;
 	padding: 100px 0;
 
+	@include mobile{
+		padding: 70px 0;
+	}
+
 	.masthead{
 		p{
     		max-width: 800px;
