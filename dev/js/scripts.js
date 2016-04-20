@@ -23,13 +23,12 @@ $(document).ready(function() {
             e.preventDefault();
             $('.site-wrapper').toggleClass('blur');
             $('#overlay').toggleClass('visible hidden');
-            $('#mobile-nav-toggle').css('display','none');
+            // $('#mobile-nav-toggle').css('display','none');
         });
         $('#close-overlay').click(function(e) {
             e.preventDefault();
             $('.site-wrapper').toggleClass('blur');
             $('#overlay').toggleClass('hidden visible');
-            $('#mobile-nav-toggle').css('display','block');
         });
         
     }
