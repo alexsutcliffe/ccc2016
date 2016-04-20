@@ -1,0 +1,47 @@
+.bx-wrapper {
+  .bx-viewport {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .bx-controls {
+    margin-top: 1em;
+    position: relative;
+  }
+  .prev {
+    float: left;
+    @include mobile {
+      display: block;
+    }
+  }
+  .next {
+    float: right;
+    @include mobile {
+      display: block;
+    }
+  }
+  .prev:hover, .prev:focus {
+     background-position: 0 0;
+  }
+  .next:hover, .next:focus {
+     background-position: -43px 0;
+  }
+  .bx-controls-direction {
+    text-align: center;
+  }
+}
+
+.bx-pager {
+  text-align: center;
+  padding-top: 1.5em;
+}
+#bx-pager {
+  margin-top: 2em;
+  display: none;
+  @include tablet {
+    display: block;
+  }
+}

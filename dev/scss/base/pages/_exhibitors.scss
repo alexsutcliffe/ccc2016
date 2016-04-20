@@ -1,0 +1,66 @@
+div.exhibitors-template {
+	section.no-padding + section {
+		padding-top: 0 !important; 
+	}
+	.no-bottom-padding {
+		padding: 100px 0 0 0 !important;
+	}
+	.no-padding {
+		padding: 0;
+		.full-bleed {
+			max-width: 100%;
+			height: auto;
+			min-height: 300px;
+			max-height: 400px;
+			overflow: hidden;
+			.exhibitors {
+				background: url('../img/exhibitors.jpg') no-repeat center center;
+				background-size: cover;
+				@include desktop {
+					background-size: contain;
+				}
+			}
+			.column {
+				padding: 0;
+				max-width: 100%;
+	    	height: auto;
+	    	min-height: 300px;
+    		max-height: 400px;
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+	}
+}
+#overlay {
+	width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  .text-right {
+  	  margin-bottom: 0;
+  	  cursor: pointer;
+  	.close {
+  		font-size: 30px;
+  		vertical-align: sub;
+  		padding-right: 6px;
+  	}
+  }
+  .gallery {
+  	margin-top: 40px;
+  	span {
+  		color: $white;
+  		font-size: 45px;
+  	}
+  }
+}
+	.overlay.hide {
+      display: none;
+  }
+  .overlay.show {
+      display: block;
+  }
