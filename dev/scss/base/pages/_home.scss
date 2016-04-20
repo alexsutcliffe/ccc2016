@@ -11,6 +11,22 @@ div.home-template{
 			width: 100%;
 			max-width: 375px;
 			text-align: left;
+
+
+			@include mobile{
+				text-align: center;
+				margin: 0 auto;
+
+				.blurb{
+					display: none;
+				}
+
+				hr{
+					display: none;
+				}
+			}
+
+
 			
 			h1{
 				font-weight: normal;
@@ -146,8 +162,14 @@ div.home-template{
 	section.radisson-block{
 		background: url("../img/radisson.png") no-repeat center center;
 		background-size: cover;
+    	padding-left: 0.9375rem;
+    	padding-right: 0.9375rem;
 		h2{
 			font-size: 32px;
+			@include mobile{
+				font-size: 28px;
+				line-height: 37px;
+			}
 		}
 		a{
 			margin-bottom: 0;
@@ -157,6 +179,10 @@ div.home-template{
 	section.sponsors{
 		h1{
 			margin-bottom: 60px;
+
+			@include mobile{
+				margin-bottom : 30px;
+			}
 		}
 		.column{
 			overflow: hidden;
@@ -164,6 +190,7 @@ div.home-template{
 		    padding-top: 5px;
 		    padding-left: 10px;
 		    padding-right: 10px;
+
 			img{
 				width: 100%;
 			}
