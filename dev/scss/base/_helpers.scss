@@ -21,6 +21,18 @@
     text-align: right;
 }
 
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+.text-blue{
+    color: $primary;
+}
+
 .hidden {
     background-color: transparent;
     visibility: hidden;
@@ -38,4 +50,10 @@
 .blur {
     -webkit-filter: blur(13px);
     box-shadow: 2px 0px 64px 17px rgba(0, 0, 0, 0.75);
+}
+
+.sm-hide{
+    @include mobile{
+        display: none;
+    }
 }

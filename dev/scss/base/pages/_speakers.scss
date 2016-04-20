@@ -1,0 +1,76 @@
+// Styles for home page
+.speakers-template{
+
+	.speakers{
+		margin-top: 100px;
+		.speaker{
+			margin: 20px 5px;
+			padding: 25px;
+			background-color: $primary-opaque--low; 
+			@include clearfix;
+
+			@include mobile{
+				background-color: transparent;
+			}
+
+			.speaker--image{
+				float: left;
+    			margin-right: 20px;
+    			width: 120px;
+
+    			@include mobile{
+    				text-align: center;
+    				float: none;
+    				width: 100%;
+    				margin-right: auto;
+    			}
+			}
+			.speaker-info{
+				float: left;
+				text-align: left;
+				width: 66%;
+
+				@include mobile{
+					text-align: center;
+    				float: none;
+    				width: 100%;
+    			}
+
+    			.speaker--name{
+    				color: $primary;
+    				font-family: $heading-font-family;
+    				font-weight: normal;
+    			}
+
+    			.speaker--title{
+    				color: $primary;
+    				font-size: 12px;
+    				margin-bottom: 10px;
+    			}
+
+    			.speaker--bio{
+
+    				p:last-child{
+    					margin-bottom: 0;
+    				}
+    			}
+			}
+		}
+	}
+
+	section.testimonials{
+		background-color: rgba(0, 0, 0, 0.05);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

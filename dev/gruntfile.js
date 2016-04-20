@@ -3,7 +3,8 @@ module.exports = function(grunt){
     require('time-grunt')(grunt);
 
     var jsVendorList = [
-    	'vendor/jquery/dist/jquery.min.js'
+    	'vendor/jquery/dist/jquery.min.js',
+    	'vendor/masonry/dist/masonry.pkgd.min.js' 
     ];
     var jsFileList = [
     	'js/main.js'
