@@ -11,6 +11,29 @@ $(document).ready(function() {
         $('.bars').toggleClass('show hide');
     });
 
+    // If we're asking for bx-slider on a page, load it
+    if ($('ul.bxslider').length) {
+
+        $('.bxslider').bxSlider({
+            pager: true,
+            pagerType: 'short'
+        });
+        //Open and close the bx-slider overlay
+        $('#open-overlay').click(function(e) {
+            e.preventDefault();
+            $('.site-wrapper').toggleClass('blur');
+            $('#overlay').toggleClass('visible hidden');
+            $('#mobile-nav-toggle').css('display','none');
+        });
+        $('#close-overlay').click(function(e) {
+            e.preventDefault();
+            $('.site-wrapper').toggleClass('blur');
+            $('#overlay').toggleClass('hidden visible');
+            $('#mobile-nav-toggle').css('display','block');
+        });
+        
+    }
+
     // This will be used globally so no harm declaring it as global
     var isMobile;
     if ($(window).width() > 1010) {
@@ -40,4 +63,8 @@ $(document).ready(function() {
     var y = d.getFullYear();
     $('span.copy-year').html(y);
 
+     $('.bxslider').bxSlider();
+
 });
+
+

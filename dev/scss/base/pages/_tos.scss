@@ -1,0 +1,7 @@
+// Terms of Services (TOS) styles
+
+.tos-template{
+	p, li, a{
+		@extend .small; 
+	}
+}
