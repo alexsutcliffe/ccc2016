@@ -8,6 +8,7 @@ body{
 	overflow: hidden;
 	width: 100%;
 	z-index: 0;
+	padding-top: 80px;
 }
 
 header{
@@ -70,6 +71,11 @@ section{
 @import "components/footer";
 @import "components/testimonials";
 @import "components/register-box";
+@import "components/slider";
 
 // Import Pages
+
 @import "pages/home";
+@import "pages/why";
+@import "pages/cle";
+@import "pages/networking";

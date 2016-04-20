@@ -7,6 +7,28 @@ $(document).ready(function() {
     });
 
 
+    $('.bxslider').bxSlider({
+        pager: true,
+        pagerType: 'short'
+    });
+
+
+    // var slideQty = slider.getSlideCount();
+    // var current = slider.getCurrentSlide();
+
+
+    $('#open-overlay').click(function(e) {
+        e.preventDefault();
+        $('.site-wrapper').toggleClass('blur');
+        $('#overlay').toggleClass('visible hidden');
+        $('#mobile-nav-toggle').css('display','none');
+    });
+    $('#close-overlay').click(function(e) {
+        e.preventDefault();
+        $('.site-wrapper').toggleClass('blur');
+        $('#overlay').toggleClass('hidden visible');
+        $('#mobile-nav-toggle').css('display','block');
+    });
 
     $(window).on("scroll", function() {
         if($(window).scrollTop() > 80) {
@@ -21,4 +43,8 @@ $(document).ready(function() {
 	var y = d.getFullYear();
 	$('span.copy-year').html(y);
 
+     $('.bxslider').bxSlider();
+
 });
+
+
