@@ -90,19 +90,31 @@
                 <div ng-controller="agendaCtrl" class="row">
                     <div class="controls small-4 medium-4 large-4 columns">
                         <h4>FILTER BY DAY</h4>
-                        <li ng-repeat="day in dayArray">
+                        <ul ngCloak>
+                          <li>
                             <label>
-                                <input type="checkbox" ng-model="day.on" ng-change="checkChange()" /> {{day.name}}</label>
-                        </li>
+                              <input type="radio" ng-model="theFilter.day" ng-value="'day 1'">
+                              Day 1
+                            </label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="radio" ng-model="theFilter.day" ng-value="'day 2'">
+                              Day 2
+                            </label>
+                          </li>
+                        </ul>
                         <h4>FILTER BY CONTENT</h4>
-                        <li ng-repeat="cat in categoryArray">
+                        <li ng-repeat="cat in categoryArray" ngCloak> 
                             <label>
                                 <input type="checkbox" ng-model="cat.on" ng-change="checkChange()" />{{cat.name}}</label>
                         </li>
                     </div>
                     <div class="small-8 medium-8 large-8 columns">
 
-                        <div ng-repeat="sessionItem in sorted_sessionArray = (sessionArray | orderBy: 'day' | filter:myFunc) " class="ng-scope">
+                        <div ng-repeat="sessionItem in sorted_sessionArray = (sessionArray | orderBy: 'id' | filter:myFunc | filter:theFilter)" class="ng-scope" ngCloak>
+                            <div ng-show="sessionItem.date != sorted_sessionArray[$index -1].date" class="small-12 columns">{{sessionItem.date}}
+                            </div>
                             	<div class="small-12 columns time-wrapper">
                             		<div ng-show="sessionItem.time != sorted_sessionArray[$index -1].time" class="small-4 columns time">
                             			{{sessionItem.time}}
